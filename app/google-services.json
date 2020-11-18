@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "478739331546",
+    "firebase_url": "https://ftelevision-7a28a.firebaseio.com",
+    "project_id": "ftelevision-7a28a",
+    "storage_bucket": "ftelevision-7a28a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478739331546:android:214061924ef4f7b9d768e3",
+        "android_client_info": {
+          "package_name": "com.example.ftelevision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478739331546-skrb0o4d5iq4h2gfbl3l4ic7auk299di.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG0ORRuPU8uQqOHOlIFDhIQS8XV5pZaH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478739331546-skrb0o4d5iq4h2gfbl3l4ic7auk299di.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
