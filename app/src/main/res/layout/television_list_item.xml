@@ -19,7 +19,7 @@
             android:id="@+id/iv_television_list_item_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_tv_off_black_18dp" />
+            app:srcCompat="@drawable/ic_apartment_black_18dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -30,7 +30,7 @@
         android:padding="10dp">
 
         <TextView
-            android:id="@+id/tv_televisions_list_item_description"
+            android:id="@+id/tv_television_list_item_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"

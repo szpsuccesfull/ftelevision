@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.ftelevision.adapters.televisionAdapter;
 import com.example.ftelevision.conection.FirebaseConection;
 import com.example.ftelevision.models.DetailActivity;
 import com.example.ftelevision.models.ListActivity;
@@ -26,7 +27,7 @@ public class BaseActivity extends AppCompatActivity {
 
     protected TelevisionModel model;
     protected ArrayList<TelevisionModel> modelArrayList;
-    protected TelevisionModel adapters;
+    protected televisionAdapter adapters;
 
     protected FirebaseFirestore db;
     protected FirebaseAuth mAuth;

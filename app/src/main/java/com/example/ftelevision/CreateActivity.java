@@ -29,7 +29,7 @@ public class CreateActivity extends BaseActivity {
     FloatingActionButton fab_create_save,fab_create_clear,fab_create_back;
     ImageView iv_create_image;
     TextView tv_create_click_image;
-    EditText et_create_serial,et_create_brand,et_create_description;
+    EditText edt_create_serial,edt_create_brand,edt_create_description;
     Button btnsubir;
 
     private Button mUploaBtb;
@@ -75,9 +75,9 @@ public class CreateActivity extends BaseActivity {
                 String serial,description,brand;
                 boolean active;
 
-                serial = et_create_serial.getText().toString();
-                description = et_create_description.getText().toString();
-                brand = et_create_brand.getText().toString();
+                serial = edt_create_serial.getText().toString();
+                description = edt_create_description.getText().toString();
+                brand = edt_create_brand.getText().toString();
 
                 if(serial.isEmpty()|| description.isEmpty()||brand.isEmpty()){
                     makeSimpleAlertDialog("Info", "please fill all fields");
@@ -124,25 +124,25 @@ public class CreateActivity extends BaseActivity {
         fab_create_clear = findViewById(R.id.fab_create_clear);
         fab_create_save = findViewById(R.id.fab_create_save);
         iv_create_image = findViewById(R.id.iv_create_image);
-        et_create_serial = findViewById(R.id.et_create_serial);
-        et_create_brand = findViewById(R.id.et_create_brand);
-        et_create_description = findViewById(R.id.et_create_description);
+        edt_create_serial = findViewById(R.id.edt_create_serial  );
+        edt_create_brand = findViewById(R.id.edt_create_brand);
+        edt_create_description = findViewById(R.id.edt_create_description);
         tv_create_click_image = findViewById(R.id.tv_create_click_image);
 
     }
     private void clear(){
-        et_create_description.setText("");
-        et_create_brand.setText("");
-        et_create_serial.setText("");
+        edt_create_description.setText("");
+        edt_create_brand.setText("");
+        edt_create_serial.setText("");
 
-        et_create_serial.requestFocus();
+        edt_create_serial.requestFocus();
         iv_create_image.setImageResource(R.drawable.ic_tv_black_18dp);
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == GALLERY_INTENT && requestCode == RESULT_OK){
+    protected void onActivityResult(int requestserial, int resultserial, @Nullable Intent data) {
+        super.onActivityResult(requestserial, resultserial, data);
+        if(requestserial == GALLERY_INTENT && requestserial== RESULT_OK){
 
             Uri uri =data.getData();
             StorageReference filepath =mStorage.child("fotos").child(uri.getLastPathSegment());

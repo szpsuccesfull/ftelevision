@@ -20,6 +20,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
+import static androidx.appcompat.widget.AppCompatDrawableManager.get;
+
 public class ListActivity extends BaseActivity {
 
     private FloatingActionButton fab_list_create;
@@ -55,7 +57,7 @@ public class ListActivity extends BaseActivity {
         fab_list_create = findViewById(R.id.fab_list_create);
        lv_list_televisions = findViewById(R.id.lv_list_televisions);
     }
-    protected void  getApartments(){
+    protected void  getTelevisions(){
         if(collectionReference != null){
             collectionReference.get()
                     .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

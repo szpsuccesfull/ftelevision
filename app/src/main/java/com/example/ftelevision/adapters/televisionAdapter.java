@@ -43,7 +43,7 @@ public class televisionAdapter extends BaseAdapter {
         }
 
         TextView tv_television_list_item_description = view.findViewById(R.id.tv_televisions_list_item_description);
-        TextView tv_television_list_item_serial = view.findViewById(R.id.tv_television_list_item_serial);
+        TextView tv_television_list_item_serial = view.findViewById(R.id.tv_televisions_list_item_serial);
 
         tv_television_list_item_description.setText(getItem(position).getDescription());
         tv_television_list_item_serial.setText(getItem(position).getSerial());
